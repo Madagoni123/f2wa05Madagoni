@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
     if(y==undefined){
         y=x;
     }
-  res.render('computation', {title: `[Math.log] applied to [${x}] is [${Math.log(y)}]` })
+  res.render('computation', {title: `[Math.cos] applied to [${x}] is [${Math.cos(y)}]` })
   res.end();
 });
 
