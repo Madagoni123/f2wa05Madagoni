@@ -1,4 +1,4 @@
-const { Router } = require('express');
+
 var express = require('express');
 var router = express.Router();
 
@@ -10,13 +10,13 @@ router.get('/', function(req, res, next) {
     if(y==undefined){
         y=x;
     }
-  res.render('computation', {values: 'f(${y}) is  ${Math.log(y)}' })
+  res.render('computation', {title: 'f(${y}) is  ${Math.log(y)}' })
 })
 
 
 /* GET home page. */
 router.get('/',function(req,res,next){
-    res.render('computation',{values: 'f(${y}) is  ${Math.log(y)}'})
+    res.render('computation',{title: 'f(${y}) is  ${Math.log(y)}'})
 
     res.end();
 });
